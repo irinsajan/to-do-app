@@ -6,9 +6,9 @@
   <% @lists.each do |list| %>
     <%= render list %>
     <p>
-      <%= link_to "Show this item", list %>
+      <% link_to "Show this item", list %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "Add new to-do item", new_list_path %>
+<%= link_to "Add new to-do item", new_list_path, class: 'btn btn-primary'%>
